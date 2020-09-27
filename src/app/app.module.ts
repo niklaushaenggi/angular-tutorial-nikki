@@ -13,6 +13,7 @@ import {AuctionListDetailComponent} from './auction-list-detail/auction-list-det
 // import {AngularDateHttpInterceptor} from "./shared/angular-date-http-interceptor.component";
 import {AngularDateHttpInterceptorService} from './shared/angular-date-http-interceptor.service';
 import {AppRoutingModule} from './app-routing.module';
+import {HelperService} from './shared/helper.service';
 import { AuctionDetailComponent } from './auction-detail/auction-detail.component';
 
 
@@ -37,7 +38,7 @@ import { AuctionDetailComponent } from './auction-detail/auction-detail.componen
     provide: HTTP_INTERCEPTORS,
     useClass: AngularDateHttpInterceptorService,
     multi: true
-  }, AuctionDataService],
+  }, AuctionDataService, HelperService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
