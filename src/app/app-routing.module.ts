@@ -7,7 +7,12 @@ import {AuctionDetailComponent} from './auction-detail/auction-detail.component'
 const routes: Routes = [
   {  path: '',    pathMatch: 'full',    redirectTo: '/auctions'  },
   {    path: 'auctions',    component: AuctionListComponent  },
-  { path: 'auctions/:id', component: AuctionDetailComponent }
+  { path: 'auctions/:id', component: AuctionDetailComponent },
+  {
+    path: '',
+    pathMatch: 'full',
+    redirectTo: '/home'
+  }
 ];
 
 @NgModule({

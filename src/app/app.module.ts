@@ -15,6 +15,8 @@ import {AngularDateHttpInterceptorService} from './shared/angular-date-http-inte
 import {AppRoutingModule} from './app-routing.module';
 import {HelperService} from './shared/helper.service';
 import { AuctionDetailComponent } from './auction-detail/auction-detail.component';
+import { HomeComponent } from './home/home.component';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
 
 
 @NgModule({
@@ -23,7 +25,9 @@ import { AuctionDetailComponent } from './auction-detail/auction-detail.componen
     AuctionListComponent,
     MouseEventDisplayComponent,
     AuctionListDetailComponent,
-    AuctionDetailComponent
+    AuctionDetailComponent,
+    HomeComponent,
+    NavBarComponent
 
 
   ],
